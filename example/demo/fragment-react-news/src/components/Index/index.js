@@ -1,5 +1,5 @@
 import React from "react";
-import { globalEvent } from "easy-mft";
+import { globalEvent } from "easy-mfs";
 import "./index.scss";
 export default class Home extends React.Component {
   constructor(props) {
@@ -44,7 +44,6 @@ export default class Home extends React.Component {
       ]
     };
   }
-  goto1() {}
   componentDidMount() {
     globalEvent.on("father-type-click", data => {
       console.log("data from father-type-click", data);
